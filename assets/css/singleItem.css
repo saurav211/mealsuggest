@@ -1,0 +1,98 @@
+/* CSS for main container */
+#main-container{
+    margin: 50px;
+    margin-top: 160px;
+}
+
+/* CSS for Main : Start */
+#main{
+    width: 67%;
+}
+
+/* css of meal item name */
+#meal-item-name{
+    color: #f5931f;
+    font-size: 2.5rem;
+}
+
+/* css of meal item image */
+#meal-item-image{
+    width: -webkit-fill-available;
+    border-radius: 5px;
+}
+
+/* css for meal item youtube */
+#meal-item-video{
+    width: -webkit-fill-available;
+    height: 47vw;
+}
+
+/* css for recipe step */
+#meal-item-recipe-step{
+    list-style-type: number;
+}
+
+
+/* Css for recpie card */
+#recipe-card{
+    width: -webkit-fill-available;
+    background: #ffdbaf;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* CSS for Main : End */
+
+
+
+/* CSS for Aside : Start */
+
+#aside{
+    position: absolute;
+    height: 300px;
+    right: 0;
+    top: 104px;
+    width: 30%;
+}
+#other-recipe{
+    padding: 10px;
+    margin-top: 20px;
+    position: fixed;
+    width: 25%;
+    height: 400px;
+    background: rgb(238 255 204);
+    border-radius: 10px;
+}
+
+#other-recipe a{
+  text-decoration: none;
+}
+
+#other-recipe a:hover{
+    background: green;    
+}
+/* CSS for Aside : End */
+
+
+/* Css for media screen width */
+@media only screen and (max-width: 900px) {
+    #main{
+        position:relative;
+        width: 90%;
+    }
+    #aside{
+        position: relative;
+        height: 300px;
+        width: 100%;
+    }
+    #other-recipe{
+        padding: 10px;
+        margin-top: 20px;
+        position: relative;
+        width: 87%;
+        height: auto;
+        background: rgb(238 255 204);
+        border-radius: 10px;
+    }
+}
+

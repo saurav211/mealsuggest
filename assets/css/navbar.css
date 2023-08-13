@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
+body {
+  margin: 0;
+}
+
+/* Start : CSS for Navbar */
+#navbar {
+  display: flex;
+  top: 0;
+  flex-direction: row;
+  background: white;
+  position: fixed;
+  justify-content: space-between;
+  font-family: "Barlow Condensed", sans-serif;
+  box-shadow: 19px 15px 10px -23px #111;
+  width: 100%;
+  z-index: 999;
+}
+
+/* CSS for brand information  : Start*/
+/* #brand-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 202px;
+} */
+
+#brand-info-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 202px;
+  text-decoration: none;
+}
+
+/* css for brand name */
+#brand-name {
+  font-size: x-large;
+  font-weight: bolder;
+  color: #85a93f;
+  align-self: center;
+}
+
+/* CSS for logo */
+#logo-img {
+  width: 90px;
+}
+
+/* CSS for brand information  : End*/
+
+/* CSS for search container : Start */
+#search-container {
+  align-self: center;
+  position: relative;
+}
+#search-container input {
+  width: 150%;
+  border: 2px solid #f5931f;
+  border-radius: 5px;
+  color: #85a93f;
+  height: 30px;
+}
+#search-display {
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  display: none;
+  width: 150%;
+  max-height: 150px;
+  overflow: auto;
+  z-index: 1;
+}
+#search-display a {
+  display: block;
+  margin: 10px;
+  background: #dcf1b4;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 3px;
+  margin-left: 10px;
+  color: #856b6b;
+}
+#search-display a:hover {
+  background-color: #ffdeb8;
+}
+
+/* CSS for search container : End */
+
+/* CSS for NavLinks : Start */
+#navlinks-container {
+  display: flex;
+  width: 430px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-size: x-large;
+  align-self: center;
+  color: #47152c;
+}
+.navlink {
+  text-decoration: none;
+  color: #f5931f;
+  font-size: larger;
+}
+.navlink:hover {
+  color: #85a93f;
+}
+.navlink:active {
+  color: green;
+}
+#navbar-media {
+  height: 0;
+  transition: ease-in-out 0.1s;
+}
+#side-bar-button {
+  background: none;
+  border: none;
+  font-size: xx-large;
+  margin-right: 20px;
+  color: #85a93f;
+  cursor: pointer;
+  display: none;
+}
+/* CSS for NavLinks : End */
+
+/* Css for media width */
+@media only screen and (max-width: 930px) {
+  #side-bar-button {
+    display: block;
+  }
+  #search-container {
+    position: absolute;
+    top: 115px;
+    right: 125px;
+    display: none;
+  }
+  #navbar-media {
+    height: 0px;
+    width: 300px;
+    position: fixed;
+    z-index: 123;
+    right: 0;
+    background-image: linear-gradient(
+      to right,
+      rgb(255 255 255 / 89%),
+      rgb(255 255 255)
+    );
+    border-radius: 5px;
+    top: 10px;
+    border-left: solid 6px #85a93f;
+    border-bottom: solid 4px #f5931f;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #navlinks-container {
+    overflow: hidden;
+    height: 0px;
+    position: absolute;
+    top: 145px;
+    width: 300px;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #navlinks-container div {
+    margin: 10px;
+  }
+}

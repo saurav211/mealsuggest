@@ -1,0 +1,206 @@
+#main-container {
+  margin-top: 10px;
+}
+
+/* Css for Video Container : Start */
+#meal-video-container {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+#meal-video {
+  width: 100%;
+}
+/* Css for Video Container : End */
+
+/* Css for meal Container : Start */
+.meal-time-container {
+  margin: 27px;
+  margin-top: 40px;
+  width: 95%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.meal-time {
+  text-decoration: none;
+  color: #f5931f;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.meal-time:hover {
+  color: #85a93f;
+}
+.meal-time-food-list {
+  height: 350px;
+  width: 150%;
+  position: relative;
+  overflow: hidden;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.meal-button-right {
+  position: absolute;
+  top: 222px;
+  right: 0;
+  font-size: xxx-large;
+  background: #85a93f;
+  border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+
+.meal-button-left {
+  position: absolute;
+  top: 222px;
+  left: 0;
+  font-size: xxx-large;
+  background: #85a93f;
+  border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+.meal-button-left:hover,
+.meal-button-right:hover {
+  background: #f5931f;
+}
+
+/* Css for meal Container : End */
+
+/* Start : CSS For Meal Item Container  */
+
+.breakfast-item-container {
+  display: inline-block;
+  width: 300px;
+  margin: 17px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+}
+.lunch-item-container {
+  display: inline-block;
+  width: 300px;
+  margin: 17px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+}
+.dinner-item-container {
+  display: inline-block;
+  width: 300px;
+  margin: 17px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+}
+
+/* OnHover over main Container  */
+.breakfast-item-container:hover {
+  transform: scale(1.05);
+}
+.breakfast-item-container:hover .meal-item-name {
+  color: orangered;
+}
+.lunch-item-container:hover {
+  transform: scale(1.05);
+}
+.lunch-item-container:hover .meal-item-name {
+  color: orangered;
+}
+.dinner-item-container:hover {
+  transform: scale(1.05);
+}
+.dinner-item-container:hover .meal-item-name {
+  color: orangered;
+}
+
+/* meal item container anchor tag css */
+.meal-item-link {
+  text-decoration: none;
+  display: block;
+  min-height: 261px;
+}
+
+/* meal item image css */
+.meal-item-img {
+  width: 300px;
+}
+
+/* meal item name css */
+.meal-item-name {
+  color: black;
+  font-size: x-large;
+  margin: 12px;
+}
+
+/* meal item detail css */
+.meal-item-detail {
+  color: #423e3e;
+  margin: 12px;
+}
+
+/* End : CSS For Meal Item Container  */
+
+/* Favourite UnFavourite Button CSS : Start */
+
+#fav-unfav {
+  text-align: center;
+  margin-top: 25px;
+}
+.unfav {
+  width: 100%;
+  background: #f5931f;
+  font-size: 20px;
+  color: white;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+}
+.unfav:hover {
+  background: #85a93f;
+}
+.fav {
+  width: 100%;
+  background: #85a93f;
+  font-size: 20px;
+  color: white;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+}
+.fav:hover {
+  background: #f5931f;
+}
+
+/* Favourite UnFavourite Button CSS : End */
+
+
+/* CSS for Media Width max-width: 600px */
+@media only screen and (max-width: 600px) {
+  .meal-time-container {
+    margin: 10px;
+  }
+  .breakfast-item-container {
+    width: 266px;
+  }
+  .lunch-item-container {
+    width: 266px;
+  }
+  .dinner-item-container {
+    width: 266px;
+  }
+
+}

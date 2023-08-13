@@ -1,0 +1,98 @@
+#main-container {
+  margin-top: 140px;
+}
+
+/* Css for meal Container : Start */
+.favourite-container {
+  margin: 27px;
+  margin-top: 40px;
+}
+
+/* Favourite Text CSS */
+#favourite-text {
+  text-decoration: none;
+  color: #f5931f;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+#favourite-text:hover {
+  color: #85a93f;
+}
+
+/* CSS for Favourite Meal List Div */
+.favourite-meal-food-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.favourite-item-container {
+  display: inline-block;
+  width: 300px;
+  margin: 17px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+}
+
+/* OnHover over list Container  */
+.favourite-item-container:hover {
+  transform: scale(1.05);
+}
+.favourite-item-container:hover .meal-item-name {
+  color: orangered;
+}
+
+/* meal item container anchor tag css */
+.meal-item-link {
+  text-decoration: none;
+  width: inherit;
+  min-height: 261px;
+  display: block;
+}
+
+/* meal item image css */
+.meal-item-img {
+  width: inherit;
+}
+
+/* meal item name css */
+.meal-item-name {
+  color: black;
+  font-size: x-large;
+  margin: 12px;
+}
+
+/* meal item detail css */
+.meal-item-detail {
+  color: #423e3e;
+  margin: 12px;
+}
+
+/* Unfavourite Button CSS */
+#unfavourite {
+  text-align: center;
+  margin-top: 25px;
+}
+#unfavourite button {
+  width: 100%;
+  background: #f5931f;
+  font-size: 20px;
+  color: white;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+}
+#unfavourite button:hover {
+  background: #85a93f;
+}
+
+/* CSS for Media Width max-width: 600px */
+@media only screen and (max-width: 800px) {
+  .favourite-item-container {
+    width: 250px;
+  }
+}

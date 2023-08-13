@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
+
+footer {
+  margin-top: 100px;
+  background: gray;
+}
+
+#footer-container {
+  color: white;
+  width: auto;
+  overflow: auto;
+  margin-left: 50px;
+  padding: 5px;
+}
+#footer-container h1 {
+  font-family: "Barlow Condensed", sans-serif;
+}
+#footer-container div {
+  display: inline-table;
+  width: 49%;
+}
+#details {
+  margin-left: 50px;
+}
+.detail-list {
+  margin-left: 10px;
+}
+@media screen and (max-width: 700px) {
+  #footer-container div {
+    display: block;
+    width: auto;
+  }
+  #details {
+    margin-left: 0;
+  }
+}
