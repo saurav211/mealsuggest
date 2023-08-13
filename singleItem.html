@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/navbar.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/singleItem.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../assets/css/footer.css" />
+    <title>Meal</title>
+  </head>
+  <body>
+    <!-- Start : Navbar -->
+    <nav id="navbar">
+      <!--Logo for meal app  -->
+      <div id="brand-info">
+        <!-- Using a tag to route over home page -->
+        <a id="brand-info-link" href="../index.html">
+          <div id="logo">
+            <img id="logo-img" src="../assets/images/logo.png" alt="logo" />
+          </div>
+
+          <!--brand namme for meal app  -->
+          <div id="brand-name">24hrs-Meals</div>
+        </a>
+      </div>
+      <div id="search-container">
+        <input type="search" id="search" placeholder="Search Meal" />
+        <div id="search-display">
+          <!-- <a href="#">Pasta in White Sauce</a> -->
+        </div>
+      </div>
+      <div id="navlinks-container">
+        <!--Start: Navbar Links for Webpage -->
+        <div id="home"><a class="navlink" href="../index.html">Home</a></div>
+        <div id="morning">
+          <a class="navlink" href="./favouriteMeal.html">Favourite</a>
+        </div>
+        <div id="About"><a class="navlink" href="#about">About</a></div>
+        <!--End: Navbar Link for Webpage  -->
+      </div>
+      <button id="side-bar-button" onclick="handleSideBar()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+    <div id="navbar-media"></div>
+    <!-- End : Navbar -->
+
+    <!-- Start: Main Container -->
+    <div id="main-container">
+      <!-- We will add main container dynamically through javascripts -->
+
+      <div id="main">
+        <!--   <h1 id="meal-item-name">Baked Khichdi Recipe</h1>
+            <h3 id="meal-item-detail">Rice Casserole | One Pot Recipe Challenge</h3>
+            <img id="meal-item-image" src="../assets/images/breakfast/b1.jpg">
+            <p >Hey Foodies,
+                Don’t you feel lazy at times to cook a dish? What comes up to you?
+                I basically look to make a simple, healthy and easy to make..
+                If that’s one pot, icing on the cake!
+            </p><br>
+            <h4>RECIPE VIDEO</h4>
+            <iframe id="meal-item-video" src="https://www.youtube.com/embed/-1Mo3cGvFZw?autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            <br><br>
+            
+            <div id="recipe-card">
+                <h4>RECIPE CARD</h4>
+                <h5>INGREDIENTS:</h5>
+                <ul>
+                    <li>oil - 2 tbsp</li>
+                    <li>Cumin Seeds - 1/2 tsp</li>
+                    <li>Cinnamon - 1 bark</li>
+                    <li>Cloves - 1/4 tsp</li>
+                    <li>Dried Red Chili - 1</li>
+                    <li>Peppercorns - 1/4 tsp</li>
+                    <li>Chopped Ginger - 11/2 inch</li>
+                    <li>Chopped Green Chili - 2</li>
+                    <li>Potato - 1 Cubed</li>
+                    <li>Carrot - 1 Cubed</li>
+                    <li>salt - as per taste (I added 1&1/2 tsp)</li>
+                    <li>Turmeric - 1/2 tsp</li>
+                </ul>
+                <h5>RECIPE STEPS:</h5>
+                <ul id="meal-item-recipe-step">
+                    <li>Heat up a casserole in medium flame and add two tbsp of oil into it. Once the oil is hot, add cumin seeds, some cloves, a bark of cinnamon and a dried red chili followed by few peppercorns. Next add the chopped ginger and green chili.
+                    </li>
+                    <li>Follow up by adding the vegetables to the spice mix, cubed potatoes and carrots. Season it with salt and turmeric. Once these are half cooked, add the french beans, cauliflower and peas. Give it a mix and add the rice and dal mix to the vegetables. Add some water and cover it with a lid to cook for about 20 minutes or so in medium flame.
+                    </li>
+                    <li>
+                        After the khichdi is cooked, let it sit idle for about 15 minutes.
+                    </li>
+                </ul>
+            </div>-->
+      </div>
+      <div id="aside">
+        <div id="other-recipe">
+          <h2>Other Recipe</h2>
+          <a
+            href="https://engaurav.github.io/mealApp/html/singleItem.html?meal=breakfast&index=7"
+            ><h3 style="margin: 0px">Macaroni Pasta Recipe</h3>
+            <p style="margin: 0px">
+              Top it off with coriander and a touch of black pepper and ENJOY :)
+            </p></a
+          ><br />
+          <a
+            href="https://engaurav.github.io/mealApp/html/singleItem.html?meal=dinner&index=3"
+            ><h3 style="margin: 0px">So Cheesy Veg Pizza Recipe</h3>
+            <p style="margin: 0px">
+              Sprinkle over your favorite herbs and dig straight in!
+            </p></a
+          ><br />
+          <a
+            href="https://engaurav.github.io/mealApp/html/singleItem.html?meal=dinner&index=2"
+            ><h3 style="margin: 0px">Pindi Chole Recipe Recipe</h3>
+            <p style="margin: 0px">
+              Pindi Chole is a classic dish from Punjab. It is spicy in nature
+              and is flavored
+            </p></a
+          ><br />
+          <a
+            href="https://engaurav.github.io/mealApp/html/singleItem.html?meal=lunch&index=1"
+            ><h3 style="margin: 0px">Mushroom Masala Recipe</h3>
+            <p style="margin: 0px">
+              Spicy Indian Gravy Curry Restaurant Style!!
+            </p></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section has about details: Start -->
+    <footer id="about">
+      <div id="footer-container">
+        <div>
+          <h1>About</h1>
+          <p>
+            This is Meal Recepie WebSite to give information about steps to
+            create diffrent types of reciepe. You can add your favourtite meal
+            by click on favourite on particular meal. You can also search for
+            meals in out website.
+          </p>
+        </div>
+        <div>
+          <div id="details">
+            <h1>Details</h1>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/545/545245.png"
+              width="15px"
+            /><span class="detail-list">+91-9169770000</span><br />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/546/546394.png"
+              width="15px"
+            /><span class="detail-list">gaurav.singh323@gmail.com</span>
+          </div>
+        </div>
+        <div>&copy; Created By Gaurav Singh</div>
+      </div>
+    </footer>
+    <!-- Footer Section has about details: End -->
+    <script
+      type="text/javascript"
+      src="../assets/javascripts/navbar.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/javascripts/singleItem.js"
+    ></script>
+  </body>
+</html>

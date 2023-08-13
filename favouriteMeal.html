@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/images/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="../assets/css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/favourite.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/footer.css" />
+    <title>Favourite</title>
+  </head>
+  <body>
+    <!-- Start : Navbar -->
+    <nav id="navbar">
+      <!--Logo for meal app  -->
+      <div id="brand-info">
+        <!-- Using a tag to route over home page -->
+        <a id="brand-info-link" href="../index.html">
+          <div id="logo">
+            <img id="logo-img" src="../assets/images/logo.png" alt="logo" />
+          </div>
+
+          <!--brand namme for meal app  -->
+          <div id="brand-name">24hrs-Meals</div>
+        </a>
+      </div>
+      <div id="search-container">
+        <input type="search" id="search" placeholder="Search Meal" />
+        <div id="search-display">
+          <!-- <a href="#">Pasta in White Sauce</a> -->
+        </div>
+      </div>
+      <div id="navlinks-container">
+        <!--Start: Navbar Links for Webpage -->
+        <div id="home"><a class="navlink" href="../index.html">Home</a></div>
+        <div id="morning">
+          <a class="navlink" href="./favouriteMeal.html">Favourite</a>
+        </div>
+        <div id="About"><a class="navlink" href="#about">About</a></div>
+        <!--End: Navbar Link for Webpage  -->
+      </div>
+      <button id="side-bar-button" onclick="handleSideBar()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+    <div id="navbar-media"></div>
+    <!-- End : Navbar -->
+
+    <!-- Start: Main Container -->
+    <div id="main-container">
+      <!-- Favourite Meal Container  -->
+      <div class="favourite-container">
+        <!-- Favourite Text with H1 -->
+        <h1><a href="#" id="favourite-text">Favourite</a></h1>
+
+        <div class="favourite-meal-food-list" id="favourite">
+          <!-- Single Meal Item Container -->
+          <!-- <div class="favourite-item-container">
+            <a href="#l" class="meal-item-link">
+              <img
+                class="meal-item-img"
+                src="../assets/images/breakfast/b1.jpg"
+              />
+              <div class="meal-item-name">Pasta in White Sauce</div>
+              <p class="meal-item-detail">
+                Alfredo Pasta, Indian Style | Kiddie Lunch-box Special
+              </p>
+            </a>
+            <div id="unfavourite">
+              <button>Unfavourite</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section has about details: Start -->
+    <footer id="about">
+      <div id="footer-container">
+        <div>
+          <h1>About</h1>
+          <p>
+            This is Meal Recepie WebSite to give information about steps to
+            create diffrent types of reciepe. You can add your favourtite meal
+            by click on favourite on particular meal. You can also search for
+            meals in out website.
+          </p>
+        </div>
+        <div>
+          <div id="details">
+            <h1>Details</h1>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/545/545245.png"
+              width="15px"
+            /><span class="detail-list">+91-9169770000</span><br />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/546/546394.png"
+              width="15px"
+            /><span class="detail-list">gaurav.singh323@gmail.com</span>
+          </div>
+        </div>
+        <div>&copy; Created By Gaurav Singh</div>
+      </div>
+    </footer>
+    <!-- Footer Section has about details: End -->
+    <script
+      type="text/javascript"
+      src="../assets/javascripts/navbar.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/javascripts/favouriteMeal.js"
+    ></script>
+  </body>
+</html>
